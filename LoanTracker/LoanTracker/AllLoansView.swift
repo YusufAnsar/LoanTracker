@@ -24,7 +24,7 @@ struct AllLoansView: View {
                 }
             }
             .sheet(isPresented: $isAddLoanViewShowing) {
-
+                AddLoanView()
             }
         }
     }
