@@ -18,6 +18,10 @@
 		F5236F022C5C5D1500E40070 /* LoanTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236F012C5C5D1500E40070 /* LoanTrackerUITestsLaunchTests.swift */; };
 		F5236F0F2C5C673600E40070 /* AddLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236F0E2C5C673600E40070 /* AddLoanView.swift */; };
 		F5236F112C5C6E0F00E40070 /* AddLoanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236F102C5C6E0F00E40070 /* AddLoanViewModel.swift */; };
+		F5236F1F2C5C9BF800E40070 /* Payment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236F1B2C5C9BF800E40070 /* Payment+CoreDataClass.swift */; };
+		F5236F202C5C9BF800E40070 /* Payment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236F1C2C5C9BF800E40070 /* Payment+CoreDataProperties.swift */; };
+		F5236F212C5C9BF800E40070 /* Loan+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236F1D2C5C9BF800E40070 /* Loan+CoreDataClass.swift */; };
+		F5236F222C5C9BF800E40070 /* Loan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236F1E2C5C9BF800E40070 /* Loan+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		F5236F012C5C5D1500E40070 /* LoanTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F5236F0E2C5C673600E40070 /* AddLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoanView.swift; sourceTree = "<group>"; };
 		F5236F102C5C6E0F00E40070 /* AddLoanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoanViewModel.swift; sourceTree = "<group>"; };
+		F5236F1B2C5C9BF800E40070 /* Payment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Payment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F5236F1C2C5C9BF800E40070 /* Payment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Payment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5236F1D2C5C9BF800E40070 /* Loan+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Loan+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F5236F1E2C5C9BF800E40070 /* Loan+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Loan+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,7 @@
 				F5236EE12C5C5D1300E40070 /* AllLoansView.swift */,
 				F5236F0E2C5C673600E40070 /* AddLoanView.swift */,
 				F5236F102C5C6E0F00E40070 /* AddLoanViewModel.swift */,
+				F5236F1A2C5C9B0C00E40070 /* Model */,
 				F5236EE32C5C5D1400E40070 /* Assets.xcassets */,
 				F5236EE82C5C5D1400E40070 /* Persistence.swift */,
 				F5236EEA2C5C5D1400E40070 /* LoanTracker.xcdatamodeld */,
@@ -137,6 +146,17 @@
 				F5236F012C5C5D1500E40070 /* LoanTrackerUITestsLaunchTests.swift */,
 			);
 			path = LoanTrackerUITests;
+			sourceTree = "<group>";
+		};
+		F5236F1A2C5C9B0C00E40070 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5236F1B2C5C9BF800E40070 /* Payment+CoreDataClass.swift */,
+				F5236F1C2C5C9BF800E40070 /* Payment+CoreDataProperties.swift */,
+				F5236F1D2C5C9BF800E40070 /* Loan+CoreDataClass.swift */,
+				F5236F1E2C5C9BF800E40070 /* Loan+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +294,10 @@
 				F5236F112C5C6E0F00E40070 /* AddLoanViewModel.swift in Sources */,
 				F5236EEC2C5C5D1400E40070 /* LoanTracker.xcdatamodeld in Sources */,
 				F5236EE02C5C5D1300E40070 /* LoanTrackerApp.swift in Sources */,
+				F5236F1F2C5C9BF800E40070 /* Payment+CoreDataClass.swift in Sources */,
+				F5236F202C5C9BF800E40070 /* Payment+CoreDataProperties.swift in Sources */,
+				F5236F212C5C9BF800E40070 /* Loan+CoreDataClass.swift in Sources */,
+				F5236F222C5C9BF800E40070 /* Loan+CoreDataProperties.swift in Sources */,
 				F5236F0F2C5C673600E40070 /* AddLoanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
