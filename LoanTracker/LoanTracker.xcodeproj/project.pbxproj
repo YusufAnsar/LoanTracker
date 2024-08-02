@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F5236EE02C5C5D1300E40070 /* LoanTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236EDF2C5C5D1300E40070 /* LoanTrackerApp.swift */; };
-		F5236EE22C5C5D1300E40070 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236EE12C5C5D1300E40070 /* ContentView.swift */; };
+		F5236EE22C5C5D1300E40070 /* AllLoansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236EE12C5C5D1300E40070 /* AllLoansView.swift */; };
 		F5236EE42C5C5D1400E40070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5236EE32C5C5D1400E40070 /* Assets.xcassets */; };
 		F5236EE72C5C5D1400E40070 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5236EE62C5C5D1400E40070 /* Preview Assets.xcassets */; };
 		F5236EE92C5C5D1400E40070 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236EE82C5C5D1400E40070 /* Persistence.swift */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		F5236EDC2C5C5D1300E40070 /* LoanTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5236EDF2C5C5D1300E40070 /* LoanTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTrackerApp.swift; sourceTree = "<group>"; };
-		F5236EE12C5C5D1300E40070 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F5236EE12C5C5D1300E40070 /* AllLoansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLoansView.swift; sourceTree = "<group>"; };
 		F5236EE32C5C5D1400E40070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5236EE62C5C5D1400E40070 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5236EE82C5C5D1400E40070 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				F5236EDF2C5C5D1300E40070 /* LoanTrackerApp.swift */,
-				F5236EE12C5C5D1300E40070 /* ContentView.swift */,
+				F5236EE12C5C5D1300E40070 /* AllLoansView.swift */,
 				F5236EE32C5C5D1400E40070 /* Assets.xcassets */,
 				F5236EE82C5C5D1400E40070 /* Persistence.swift */,
 				F5236EEA2C5C5D1400E40070 /* LoanTracker.xcdatamodeld */,
@@ -264,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5236EE92C5C5D1400E40070 /* Persistence.swift in Sources */,
-				F5236EE22C5C5D1300E40070 /* ContentView.swift in Sources */,
+				F5236EE22C5C5D1300E40070 /* AllLoansView.swift in Sources */,
 				F5236EEC2C5C5D1400E40070 /* LoanTracker.xcdatamodeld in Sources */,
 				F5236EE02C5C5D1300E40070 /* LoanTrackerApp.swift in Sources */,
 			);

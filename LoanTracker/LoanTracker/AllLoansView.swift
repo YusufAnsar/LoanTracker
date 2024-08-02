@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct AllLoansView: View {
 
     var body: some View {
         Text("hello world")
@@ -19,5 +19,5 @@ struct ContentView: View {
 
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    AllLoansView()
 }
