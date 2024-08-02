@@ -10,21 +10,18 @@ import SwiftUI
 struct AddLoanView: View {
     
     @Environment(\.dismiss) var dismiss
-    @State private var name = ""
-    @State private var amount = ""
-    @State private var startDate = Date()
-    @State private var dueDate = Date()
+    @State var viewModel = AddLoanViewModel()
 
 
     var body: some View {
         NavigationStack {
             Form {
-                TextField("Name", text: $name)
+                TextField("Name", text: $viewModel.name)
                     .textInputAutocapitalization(.sentences)
-                TextField("Amount", text: $amount)
+                TextField("Amount", text: $viewModel.amount)
                     .keyboardType(.numberPad)
-                DatePicker("Start Date", selection: $startDate, in: ...Date(), displayedComponents: .date)
-                DatePicker("Due Date", selection: $dueDate, in: startDate..., displayedComponents: .date)
+                DatePicker("Start Date", selection: $viewModel.startDate, in: ...Date(), displayedComponents: .date)
+                DatePicker("Due Date", selection: $viewModel.dueDate, in: viewModel.startDate..., displayedComponents: .date)
             }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -51,13 +48,14 @@ struct AddLoanView: View {
     @ViewBuilder
     private func saveButton() -> some View {
         Button {
-
+            viewModel.saveLoan()
+            dismiss()
         } label: {
             Text("Done")
                 .font(.subheadline)
                 .fontWeight(.semibold)
         }
-        .disabled(true)
+        .disabled(viewModel.isInvalidForm())
     }
 }
 
