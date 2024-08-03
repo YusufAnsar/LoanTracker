@@ -8,11 +8,36 @@
 import SwiftUI
 
 struct PaymentsView: View {
+
+    let loan: Loan
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List {
+                ForEach(loan.paymentsArray) { payment in
+                    
+                }
+            }
+            .listStyle(.grouped)
+        }
+        .navigationTitle(loan.wrappedName)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                addButton()
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func addButton() -> some View {
+        Button {
+
+        } label: {
+            Image(systemName: "plus.circle")
+                .font(.title3)
+        }
+        .padding([.vertical, .leading], 5)
     }
 }
 
-#Preview {
-    PaymentsView()
-}

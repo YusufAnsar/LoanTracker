@@ -20,7 +20,9 @@ struct AllLoansView: View {
         NavigationStack {
             List {
                 ForEach(loans) { loan in
-                    LoanCell(name: loan.wrappedName, amount: loan.totalAmount, date: loan.wrappedDate)
+                    NavigationLink(value: loan) {
+                        LoanCell(name: loan.wrappedName, amount: loan.totalAmount, date: loan.wrappedDate)
+                    }
                 }
             }
             .navigationTitle("All loans")
@@ -31,6 +33,9 @@ struct AllLoansView: View {
             }
             .sheet(isPresented: $isAddLoanViewShowing) {
                 AddLoanView()
+            }
+            .navigationDestination(for: Loan.self) { loan in
+                PaymentsView(loan: loan)
             }
         }
     }
