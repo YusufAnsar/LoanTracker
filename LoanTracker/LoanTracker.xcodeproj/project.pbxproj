@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F522AC732C5E58680051ABEB /* LoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F522AC722C5E58680051ABEB /* LoanCell.swift */; };
+		F522AC752C5E5CA40051ABEB /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F522AC742C5E5CA40051ABEB /* PaymentsView.swift */; };
 		F5236EE02C5C5D1300E40070 /* LoanTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236EDF2C5C5D1300E40070 /* LoanTrackerApp.swift */; };
 		F5236EE22C5C5D1300E40070 /* AllLoansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5236EE12C5C5D1300E40070 /* AllLoansView.swift */; };
 		F5236EE42C5C5D1400E40070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5236EE32C5C5D1400E40070 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F522AC722C5E58680051ABEB /* LoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCell.swift; sourceTree = "<group>"; };
+		F522AC742C5E5CA40051ABEB /* PaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
 		F5236EDC2C5C5D1300E40070 /* LoanTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5236EDF2C5C5D1300E40070 /* LoanTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTrackerApp.swift; sourceTree = "<group>"; };
 		F5236EE12C5C5D1300E40070 /* AllLoansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLoansView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F522AC712C5E58210051ABEB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F5236EE82C5C5D1400E40070 /* Persistence.swift */,
+				F5236EEA2C5C5D1400E40070 /* LoanTracker.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		F5236ED32C5C5D1200E40070 = {
 			isa = PBXGroup;
 			children = (
@@ -112,13 +125,14 @@
 			children = (
 				F5236EDF2C5C5D1300E40070 /* LoanTrackerApp.swift */,
 				F5236EE12C5C5D1300E40070 /* AllLoansView.swift */,
+				F522AC742C5E5CA40051ABEB /* PaymentsView.swift */,
 				F5236F0E2C5C673600E40070 /* AddLoanView.swift */,
 				F5236F102C5C6E0F00E40070 /* AddLoanViewModel.swift */,
 				F5236F1A2C5C9B0C00E40070 /* Model */,
 				F5236EE32C5C5D1400E40070 /* Assets.xcassets */,
-				F5236EE82C5C5D1400E40070 /* Persistence.swift */,
-				F5236EEA2C5C5D1400E40070 /* LoanTracker.xcdatamodeld */,
+				F522AC712C5E58210051ABEB /* CoreData */,
 				F5236EE52C5C5D1400E40070 /* Preview Content */,
+				F522AC722C5E58680051ABEB /* LoanCell.swift */,
 			);
 			path = LoanTracker;
 			sourceTree = "<group>";
@@ -290,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5236EE92C5C5D1400E40070 /* Persistence.swift in Sources */,
+				F522AC752C5E5CA40051ABEB /* PaymentsView.swift in Sources */,
 				F5236EE22C5C5D1300E40070 /* AllLoansView.swift in Sources */,
 				F5236F112C5C6E0F00E40070 /* AddLoanViewModel.swift in Sources */,
 				F5236EEC2C5C5D1400E40070 /* LoanTracker.xcdatamodeld in Sources */,
@@ -298,6 +313,7 @@
 				F5236F202C5C9BF800E40070 /* Payment+CoreDataProperties.swift in Sources */,
 				F5236F212C5C9BF800E40070 /* Loan+CoreDataClass.swift in Sources */,
 				F5236F222C5C9BF800E40070 /* Loan+CoreDataProperties.swift in Sources */,
+				F522AC732C5E58680051ABEB /* LoanCell.swift in Sources */,
 				F5236F0F2C5C673600E40070 /* AddLoanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

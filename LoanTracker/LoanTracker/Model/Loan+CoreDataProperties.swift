@@ -27,6 +27,10 @@ extension Loan {
         name ?? "Unknown"
     }
 
+    public var wrappedDate: Date {
+        dueDate ?? Date()
+    }
+
     public var paymentsArray: [Payment] {
         let set = payment as? Set<Payment> ?? []
         return set.sorted { $0.wrappedDate < $1.wrappedDate }

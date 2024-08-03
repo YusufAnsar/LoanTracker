@@ -10,12 +10,18 @@ import CoreData
 
 struct AllLoansView: View {
 
+    @Environment(\.managedObjectContext) var viewContext
     @State private var isAddLoanViewShowing = false
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Loan.startDate, ascending: true)],
+                  animation: .default)
+    private var loans: FetchedResults<Loan>
 
     var body: some View {
         NavigationStack {
             List {
-
+                ForEach(loans) { loan in
+                    LoanCell(name: loan.wrappedName, amount: loan.totalAmount, date: loan.wrappedDate)
+                }
             }
             .navigationTitle("All loans")
             .toolbar {
